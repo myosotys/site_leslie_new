@@ -1,0 +1,9 @@
+.slider {
+  padding-bottom: 2%;
+  height: 100%;
+}
+.item-inner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

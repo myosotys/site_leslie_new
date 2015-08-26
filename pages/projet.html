@@ -1,0 +1,51 @@
+<div class="slider">
+    <div class="col-md-44 col-sm-48 col-md-offset-2 full-height">
+        <div id="myCarousel" class="carousel slide vertical full-height">
+            <ol class="carousel-indicators">
+                <li ng-repeat="slide in slides" data-target="#myCarousel" data-slide-to="{{$index}}" ng-class="{active: $first}"><span>{{slide.label}}</span><a></a></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner vertical full-height">
+
+                <div ng-repeat="slide in slides" ng-class="{active: $first}" class="item full-height" ng-include="getPartial(slide.name)">
+
+                </div>
+
+
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+        </div>
+
+    </div>
+</div>
+<div class="full-height col-md-2 verticalDiv" style="top: 45%;">
+    <h1 class="text90"><a ng-click="goAbout()">About</a></h1>
+</div>
+<script>
+    $('.carousel').carousel({
+        interval: false
+    }).bind('mousewheel', function(e){
+        if(e.originalEvent.wheelDelta /120 > 0) {
+            $(this).carousel('next');
+        }
+        else{
+            $(this).carousel('prev');
+        }
+    });;
+    $('.carousel').on('slide.bs.carousel', function (e) {
+
+        var titleDiv=$(".show_title");
+        titleDiv.removeClass("show_title");
+        titleDiv.addClass("hide_title");
+    })
+    $('.carousel').on('slid.bs.carousel', function (e) {
+
+        var titleDiv=$(".item-inner div", e.relatedTarget);
+
+        titleDiv.removeClass("hide_title");
+        titleDiv.addClass("show_title");
+    })
+
+</script>

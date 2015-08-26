@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- /**
+    Extended - HTML5 creative Portfolio Template
+    Copyright (c) 2015, Subramanian
+
+    Author: Subramanian
+    Profile: themeforest.net/user/FMedia/
+
+    Version: 1.0.0
+    Release Date: March 2015
+**/ -->
+
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Extended - HTML5 creative Portfolio Template</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS
+  ================================================== -->
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!-- Included CSS files
+    ================================================== -->
+
+    <link rel="stylesheet" type="text/css"  href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"  href="css/carousel.css">
+    <link rel="stylesheet" type="text/css"  href="css/layout.css">
+    <link rel="stylesheet" type="text/css"  href="css/about.css">
+    <link rel="stylesheet" type="text/css"  href="css/animate.css">
+    <link rel="stylesheet" type="text/css"  href="css/projet.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+</head>
+
+
+<body  ng-app="leslie" name="body">
+<!-- for animate -->
+<div id="loader" class="pageload-overlay" data-opening="M 0,0 80,-10 80,60 0,70 0,0" data-closing="M 0,-10 80,-20 80,-10 0,0 0,-10">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+        <path d="M 0,70 80,60 80,80 0,80 0,70"/>
+    </svg>
+</div>
+<div class="container-full">
+    <div class="row row-no-padding">
+        <div class="logo col-xs-48">
+            <div class="col-md-offset-2">
+                <a href="#!home" class="menu_link"><img src="img/logo.png" alt="logo text"></a>
+            </div>
+        </div>
+    </div>
+    <div class="row row-no-padding full-height">
+        <div ng-view class="layout  col-xs-48"></div>
+    </div>
+
+</div>
+
+
+
+
+<!-- Included javascript files
+================================================== -->
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/jquery.scrollintoview.js"></script>
+<script type="text/javascript" src="lib/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="lib/angular.js"></script>
+<script type="text/javascript" src="lib/angular-route.js"></script>
+<script type="text/javascript" src="lib/angular-animate.js"></script>
+<script type="text/javascript" src="lib/snap.svg-min.js"></script>
+<script type="text/javascript" src="lib/svgLoader.js"></script>
+<script type="text/javascript" src="lib/classie.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+
+
+<script type="text/javascript" src="js/scrollToDirective.js"></script>
+<script type="text/javascript" src="js/layout.js"></script>
+
+<script>
+
+    $("html").niceScroll();
+
+</script>
+</body>
+</html>
